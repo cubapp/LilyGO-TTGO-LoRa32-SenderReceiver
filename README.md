@@ -4,7 +4,6 @@ The LilyGO TTGO LoRa32 Sender/Receiver made really simple. Instead of RTC module
 * The sender sends: Counter and Random number
 * The receiver shows: Internal counter, SNR and RSSi for LoRa packets plus received payload (Sender's Counter and Random numer )
 
-
 The code is derived and simplified from: 
 https://github.com/Xinyuan-LilyGO/TTGO-LoRa-Series
 
@@ -17,3 +16,21 @@ https://github.com/Xinyuan-LilyGO/TTGO-LoRa-Series
 1. board: "TTGO LoRa32-OLED V1"
 2. upload speed:  921600
 3. flash frequency: 80MHz
+
+## Building the code:
+At first change the appropriate define in <board_def.h> - whether you compile Sender (LORA_SENDER 1) or Receiver (LORA_SENDER 0). Then change the frequency to 868MHz (443 does not use pigtail antena, but PCB one)
+
+```C
+#define LORA_SENDER 0
+//#define LORA_SENDER 1
+
+#define LORA_PERIOD 868  
+// #define LORA_PERIOD 915     
+//#define LORA_PERIOD 433  
+```
+
+## Where to buy
+Apart from your favourite chinese megastores, you can buy one at:
+
+https://www.laskarduino.cz/lilygo-ttgo-lora32-t3_v1-6-868mhz-0-96--sma-wifi-modul/
+
