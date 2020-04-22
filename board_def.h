@@ -5,6 +5,8 @@
 #define LORA_V1_6_OLED  0
 #define LORA_V2_0_OLED  1
 
+// Change here whether you define Sender or Receiver.
+// The rest should be the same
 #define LORA_SENDER 0
 //#define LORA_SENDER 1
 
