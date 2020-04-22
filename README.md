@@ -4,6 +4,9 @@ The LilyGO TTGO LoRa32 Sender/Receiver made really simple. Instead of RTC module
 * The sender sends: Counter and Random number
 * The receiver shows: Internal counter, SNR and RSSi for LoRa packets plus received payload (Sender's Counter and Random numer )
 
+![TTGO LoRa ](LiliGo-TTGO-LoRa32.jpeg)
+
+
 The code is derived and simplified from: 
 https://github.com/Xinyuan-LilyGO/TTGO-LoRa-Series
 
